@@ -1,6 +1,6 @@
 ---
 name: lead-scoring-model
-description: Builds a two-axis lead scoring model (fit and intent) with point weights derived from historical conversion, negative signals, decay rules, an MQL threshold and a validation plan. Use when designing scoring from scratch, when sales ignores the current score, or when MQL volume and quality are out of balance.
+description: "Builds a two-axis lead scoring model (fit and intent) with point weights derived from historical conversion, negative signals, decay rules, an MQL threshold and a validation plan. Use when designing scoring from scratch, when sales ignores the current score, or when MQL volume and quality are out of balance."
 license: MIT
 metadata:
   title: "Lead Scoring Model"

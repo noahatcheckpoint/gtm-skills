@@ -1,6 +1,6 @@
 ---
 name: crm-data-hygiene-audit
-description: Runs a structured CRM data quality audit across completeness, duplicates, validity, consistency, freshness and ownership, scores each area, estimates business impact and produces a prioritised cleanup and prevention plan. Use before a scoring, routing or reporting project, after a migration, or when reps and leaders stop trusting CRM data.
+description: "Runs a structured CRM data quality audit across completeness, duplicates, validity, consistency, freshness and ownership, scores each area, estimates business impact and produces a prioritised cleanup and prevention plan. Use before a scoring, routing or reporting project, after a migration, or when reps and leaders stop trusting CRM data."
 license: MIT
 metadata:
   title: "CRM Data Hygiene Audit"

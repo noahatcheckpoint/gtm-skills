@@ -1,6 +1,6 @@
 ---
 name: lead-magnet-ideas
-description: Use when a B2B team needs lead magnet or content offer ideas that attract its ideal buyers and lead naturally to a sales conversation. Generates offers matched to buyer stage and job to be done, scores them for fit, effort and conversion path, decides gating, and outlines the chosen asset with its promotion and follow-up plan.
+description: "Use when a B2B team needs lead magnet or content offer ideas that attract its ideal buyers and lead naturally to a sales conversation. Generates offers matched to buyer stage and job to be done, scores them for fit, effort and conversion path, decides gating, and outlines the chosen asset with its promotion and follow-up plan."
 license: MIT
 metadata:
   title: "Lead Magnet Ideas"

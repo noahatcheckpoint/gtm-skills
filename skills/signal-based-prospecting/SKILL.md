@@ -1,6 +1,6 @@
 ---
 name: signal-based-prospecting
-description: Use when a team wants to prioritize outbound around buying signals instead of static lists. Identifies which observable events predict a purchase for this offer, defines how to detect and verify each one, weights them into a simple priority score with time decay, and maps every signal to a play and message angle.
+description: "Use when a team wants to prioritize outbound around buying signals instead of static lists. Identifies which observable events predict a purchase for this offer, defines how to detect and verify each one, weights them into a simple priority score with time decay, and maps every signal to a play and message angle."
 license: MIT
 metadata:
   title: "Signal-Based Prospecting"

@@ -1,6 +1,6 @@
 ---
 name: qbr-builder
-description: Builds a quarterly (or executive) business review for a customer account: objectives and attendee plan, value delivered against agreed goals, usage and adoption insights, risks and asks, a forward plan for next quarter, and a pre-read plus follow-up email. Use when preparing a QBR or EBR, when renewals are approaching, or when customer meetings have become status updates that executives skip.
+description: "Builds a quarterly (or executive) business review for a customer account: objectives and attendee plan, value delivered against agreed goals, usage and adoption insights, risks and asks, a forward plan for next quarter, and a pre-read plus follow-up email. Use when preparing a QBR or EBR, when renewals are approaching, or when customer meetings have become status updates that executives skip."
 license: MIT
 metadata:
   title: "QBR Builder"

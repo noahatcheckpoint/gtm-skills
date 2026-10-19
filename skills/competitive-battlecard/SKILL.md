@@ -1,6 +1,6 @@
 ---
 name: competitive-battlecard
-description: Creates a one-page competitive battlecard a seller can use mid-deal: how the competitor positions and prices, where they are honestly strong, where buyers report pain, our differentiators with proof, trap-setting questions, responses to their attacks on us, and win and loss patterns. Use when a named competitor shows up in deals, when win rates against a rival drop, or when a competitor launches or reprices.
+description: "Creates a one-page competitive battlecard a seller can use mid-deal: how the competitor positions and prices, where they are honestly strong, where buyers report pain, our differentiators with proof, trap-setting questions, responses to their attacks on us, and win and loss patterns. Use when a named competitor shows up in deals, when win rates against a rival drop, or when a competitor launches or reprices."
 license: MIT
 metadata:
   title: "Competitive Battlecard"

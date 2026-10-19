@@ -1,6 +1,6 @@
 ---
 name: copy-editing-sweep
-description: Use when existing marketing or sales copy needs to be tightened, clarified or made more persuasive without rewriting it from scratch. Runs focused editing passes for clarity, specificity, voice, proof, structure and polish, keeps the author's intent, and returns the edited copy with a change log explaining the significant edits.
+description: "Use when existing marketing or sales copy needs to be tightened, clarified or made more persuasive without rewriting it from scratch. Runs focused editing passes for clarity, specificity, voice, proof, structure and polish, keeps the author's intent, and returns the edited copy with a change log explaining the significant edits."
 license: MIT
 metadata:
   title: "Copy Editing Sweep"

@@ -1,6 +1,6 @@
 ---
 name: funnel-conversion-analysis
-description: Analyses a B2B revenue funnel stage by stage using cohort-based conversion rates and stage velocity, segments the results to find where and for whom the funnel leaks, sizes the revenue impact of each leak and recommends the two or three fixes worth doing first. Use for quarterly business reviews, when pipeline targets are missed, or when deciding where to invest marketing and sales effort.
+description: "Analyses a B2B revenue funnel stage by stage using cohort-based conversion rates and stage velocity, segments the results to find where and for whom the funnel leaks, sizes the revenue impact of each leak and recommends the two or three fixes worth doing first. Use for quarterly business reviews, when pipeline targets are missed, or when deciding where to invest marketing and sales effort."
 license: MIT
 metadata:
   title: "Funnel Conversion Analysis"

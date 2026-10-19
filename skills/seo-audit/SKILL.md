@@ -1,6 +1,6 @@
 ---
 name: seo-audit
-description: Use when a B2B website needs a structured SEO review because traffic dropped, a redesign or migration is planned, or nobody knows why pages do not rank. Audits crawlability, indexation, site structure, on-page relevance, content quality, internal linking, performance and authority, and returns findings ranked by business impact with clear fixes.
+description: "Use when a B2B website needs a structured SEO review because traffic dropped, a redesign or migration is planned, or nobody knows why pages do not rank. Audits crawlability, indexation, site structure, on-page relevance, content quality, internal linking, performance and authority, and returns findings ranked by business impact with clear fixes."
 license: MIT
 metadata:
   title: "SEO Audit"

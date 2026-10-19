@@ -1,6 +1,6 @@
 ---
 name: schema-markup
-description: Use when adding or reviewing structured data (schema.org markup, usually JSON-LD) on a B2B website. Chooses the right types for each page template, writes markup that matches visible content, connects entities like the organization, people and products, and flags types whose search features have been restricted so effort goes where it pays off.
+description: "Use when adding or reviewing structured data (schema.org markup, usually JSON-LD) on a B2B website. Chooses the right types for each page template, writes markup that matches visible content, connects entities like the organization, people and products, and flags types whose search features have been restricted so effort goes where it pays off."
 license: MIT
 metadata:
   title: "Schema Markup"

@@ -1,6 +1,6 @@
 ---
 name: forecast-review
-description: Runs a weekly or quarterly sales forecast review: classifies deals into commit, best case and pipeline using evidence rules, tests each committed deal, compares rep call, weighted and historical views, and produces a forecast call with risks and actions. Use before a forecast call, a board update, or when forecast accuracy has been poor.
+description: "Runs a weekly or quarterly sales forecast review: classifies deals into commit, best case and pipeline using evidence rules, tests each committed deal, compares rep call, weighted and historical views, and produces a forecast call with risks and actions. Use before a forecast call, a board update, or when forecast accuracy has been poor."
 license: MIT
 metadata:
   title: "Forecast Review"

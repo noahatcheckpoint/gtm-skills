@@ -1,6 +1,6 @@
 ---
 name: case-study-writer
-description: Use when turning a customer success into a B2B case study, customer story or proof snippet. Plans the interview, structures the story around the customer's situation, decision and measurable outcome, handles anonymization and approval, and produces a full case study plus short versions for sales decks, emails and web pages.
+description: "Use when turning a customer success into a B2B case study, customer story or proof snippet. Plans the interview, structures the story around the customer's situation, decision and measurable outcome, handles anonymization and approval, and produces a full case study plus short versions for sales decks, emails and web pages."
 license: MIT
 metadata:
   title: "Case Study Writer"

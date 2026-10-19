@@ -1,6 +1,6 @@
 ---
 name: tam-sizing
-description: Use when a team needs a defensible estimate of its total addressable, serviceable and obtainable market for planning, fundraising, territory design or deciding whether a segment is worth entering. Builds a bottom-up account-count model, sanity-checks it top-down, and shows every assumption so the number can be challenged and updated.
+description: "Use when a team needs a defensible estimate of its total addressable, serviceable and obtainable market for planning, fundraising, territory design or deciding whether a segment is worth entering. Builds a bottom-up account-count model, sanity-checks it top-down, and shows every assumption so the number can be challenged and updated."
 license: MIT
 metadata:
   title: "TAM Sizing"

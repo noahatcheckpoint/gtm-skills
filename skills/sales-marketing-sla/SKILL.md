@@ -1,6 +1,6 @@
 ---
 name: sales-marketing-sla
-description: Drafts a two-way service level agreement between marketing and sales (and optionally SDRs and customer success): lead definitions, volume commitments, response times by lead type, follow-up effort, acceptance and rejection rules, recycling, reporting and an escalation path. Use when leads go unworked, when marketing and sales blame each other, or when launching a new handoff.
+description: "Drafts a two-way service level agreement between marketing and sales (and optionally SDRs and customer success): lead definitions, volume commitments, response times by lead type, follow-up effort, acceptance and rejection rules, recycling, reporting and an escalation path. Use when leads go unworked, when marketing and sales blame each other, or when launching a new handoff."
 license: MIT
 metadata:
   title: "Sales and Marketing SLA"

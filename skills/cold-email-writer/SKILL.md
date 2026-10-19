@@ -1,6 +1,6 @@
 ---
 name: cold-email-writer
-description: Use when writing a first-touch B2B cold email to a specific person or a tightly defined segment. Gathers the trigger, the problem and the proof, then drafts short, plain-text emails that read like a note from a peer, with a low-friction ask and two alternative angles to test.
+description: "Use when writing a first-touch B2B cold email to a specific person or a tightly defined segment. Gathers the trigger, the problem and the proof, then drafts short, plain-text emails that read like a note from a peer, with a low-friction ask and two alternative angles to test."
 license: MIT
 metadata:
   title: "Cold Email Writer"

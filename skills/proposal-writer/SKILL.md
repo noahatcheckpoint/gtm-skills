@@ -1,6 +1,6 @@
 ---
 name: proposal-writer
-description: Writes a B2B sales proposal built on the buyer's own problem statement: executive summary, current situation and cost, recommended solution mapped to success criteria, scope and deliverables, investment options, timeline, proof, terms and next steps. Use after discovery and evaluation when a buyer asks for a proposal, when proposals keep stalling, or when turning call notes into a document a buying committee can approve.
+description: "Writes a B2B sales proposal built on the buyer's own problem statement: executive summary, current situation and cost, recommended solution mapped to success criteria, scope and deliverables, investment options, timeline, proof, terms and next steps. Use after discovery and evaluation when a buyer asks for a proposal, when proposals keep stalling, or when turning call notes into a document a buying committee can approve."
 license: MIT
 metadata:
   title: "Proposal Writer"

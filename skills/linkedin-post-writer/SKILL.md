@@ -1,6 +1,6 @@
 ---
 name: linkedin-post-writer
-description: Use when drafting LinkedIn posts for a founder, executive, seller or company page in a B2B context. Turns a real experience, opinion, lesson or piece of data into a post with a strong opening line, a clear single idea, readable formatting and a natural close, in the author's own voice rather than generic thought-leadership style.
+description: "Use when drafting LinkedIn posts for a founder, executive, seller or company page in a B2B context. Turns a real experience, opinion, lesson or piece of data into a post with a strong opening line, a clear single idea, readable formatting and a natural close, in the author's own voice rather than generic thought-leadership style."
 license: MIT
 metadata:
   title: "LinkedIn Post Writer"

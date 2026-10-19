@@ -1,6 +1,6 @@
 ---
 name: attribution-model-design
-description: Designs a B2B marketing attribution approach: the business questions it must answer, the touchpoint and stage data required, the choice of model (first touch, last touch, position-based, W-shaped, data-driven) with self-reported attribution and incrementality tests alongside, and a reporting spec with known limits. Use when leadership asks which channels drive pipeline, when budgets are being reallocated, or when attribution reports are distrusted.
+description: "Designs a B2B marketing attribution approach: the business questions it must answer, the touchpoint and stage data required, the choice of model (first touch, last touch, position-based, W-shaped, data-driven) with self-reported attribution and incrementality tests alongside, and a reporting spec with known limits. Use when leadership asks which channels drive pipeline, when budgets are being reallocated, or when attribution reports are distrusted."
 license: MIT
 metadata:
   title: "Attribution Model Design"

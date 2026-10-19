@@ -1,6 +1,6 @@
 ---
 name: content-cluster-plan
-description: Use when planning B2B content around a topic so it builds search and AI visibility and supports pipeline. Picks topics from buyer problems and the product's strengths, maps a pillar page with supporting articles by intent and funnel stage, defines internal linking, avoids cannibalization, and sequences production into a realistic calendar.
+description: "Use when planning B2B content around a topic so it builds search and AI visibility and supports pipeline. Picks topics from buyer problems and the product's strengths, maps a pillar page with supporting articles by intent and funnel stage, defines internal linking, avoids cannibalization, and sequences production into a realistic calendar."
 license: MIT
 metadata:
   title: "Content Cluster Plan"

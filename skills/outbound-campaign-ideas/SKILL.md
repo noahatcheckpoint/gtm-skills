@@ -1,6 +1,6 @@
 ---
 name: outbound-campaign-ideas
-description: Use when a team needs fresh outbound campaign concepts beyond generic "book a demo" blasts. Generates campaign ideas built on a specific audience, a reason to reach out now, and an offer worth replying to, then scores them for effort and expected impact and turns the top picks into briefs ready for copywriting.
+description: "Use when a team needs fresh outbound campaign concepts beyond generic \"book a demo\" blasts. Generates campaign ideas built on a specific audience, a reason to reach out now, and an offer worth replying to, then scores them for effort and expected impact and turns the top picks into briefs ready for copywriting."
 license: MIT
 metadata:
   title: "Outbound Campaign Ideas"

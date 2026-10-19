@@ -1,6 +1,6 @@
 ---
 name: gtm-tech-stack-audit
-description: Audits the go-to-market tool stack (CRM, marketing automation, sales engagement, data, analytics, CS tools) for adoption, overlap, integration gaps and total cost including admin time, then recommends keep, consolidate, replace or retire with a renewal calendar. Use before budget planning, a renewal cycle, a CRM change, or when the team complains about too many tools.
+description: "Audits the go-to-market tool stack (CRM, marketing automation, sales engagement, data, analytics, CS tools) for adoption, overlap, integration gaps and total cost including admin time, then recommends keep, consolidate, replace or retire with a renewal calendar. Use before budget planning, a renewal cycle, a CRM change, or when the team complains about too many tools."
 license: MIT
 metadata:
   title: "GTM Tech Stack Audit"

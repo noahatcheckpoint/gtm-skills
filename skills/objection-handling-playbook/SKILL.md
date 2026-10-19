@@ -1,6 +1,6 @@
 ---
 name: objection-handling-playbook
-description: Builds an objection handling playbook for a sales team: collects and classifies the real objections buyers raise, diagnoses what each one usually means, and writes response talk tracks with diagnostic questions, proof points and a confirmation step. Use when reps lose deals to the same pushback, when launching a new product or price, or when onboarding new sellers.
+description: "Builds an objection handling playbook for a sales team: collects and classifies the real objections buyers raise, diagnoses what each one usually means, and writes response talk tracks with diagnostic questions, proof points and a confirmation step. Use when reps lose deals to the same pushback, when launching a new product or price, or when onboarding new sellers."
 license: MIT
 metadata:
   title: "Objection Handling Playbook"

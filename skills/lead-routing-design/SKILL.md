@@ -1,6 +1,6 @@
 ---
 name: lead-routing-design
-description: Designs lead routing logic as an ordered decision tree: matching leads to existing accounts and owners, territory and segment rules, assignment methods, capacity and out-of-hours fallbacks, escalation timers and a test plan. Use when leads sit unassigned, go to the wrong rep, or when territories or team structure change.
+description: "Designs lead routing logic as an ordered decision tree: matching leads to existing accounts and owners, territory and segment rules, assignment methods, capacity and out-of-hours fallbacks, escalation timers and a test plan. Use when leads sit unassigned, go to the wrong rep, or when territories or team structure change."
 license: MIT
 metadata:
   title: "Lead Routing Design"

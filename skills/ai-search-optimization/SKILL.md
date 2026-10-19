@@ -1,6 +1,6 @@
 ---
 name: ai-search-optimization
-description: Use when a company wants to be cited or recommended in AI answer engines such as ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot or Claude. Audits how the brand currently appears for buyer prompts, separates being cited as a source from being named as a recommendation, and builds a prioritized plan across technical access, citable content and off-site presence.
+description: "Use when a company wants to be cited or recommended in AI answer engines such as ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot or Claude. Audits how the brand currently appears for buyer prompts, separates being cited as a source from being named as a recommendation, and builds a prioritized plan across technical access, citable content and off-site presence."
 license: MIT
 metadata:
   title: "AI Search Optimization"

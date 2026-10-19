@@ -1,6 +1,6 @@
 ---
 name: messaging-framework
-description: Use when a team needs one source of truth for how to talk about its offer across website, sales, ads and outbound. Converts positioning into a layered message house with a core narrative, value pillars, proof, persona-specific angles and approved language, so every channel says the same thing in the right register.
+description: "Use when a team needs one source of truth for how to talk about its offer across website, sales, ads and outbound. Converts positioning into a layered message house with a core narrative, value pillars, proof, persona-specific angles and approved language, so every channel says the same thing in the right register."
 license: MIT
 metadata:
   title: "Messaging Framework"

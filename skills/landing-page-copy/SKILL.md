@@ -1,6 +1,6 @@
 ---
 name: landing-page-copy
-description: Use when writing or rewriting copy for a B2B landing page, homepage, product page or campaign page. Starts from the visitor's awareness level and the single action the page exists for, then builds a section-by-section page with headline options, proof placement, objection handling and calls to action, plus notes on what to test first.
+description: "Use when writing or rewriting copy for a B2B landing page, homepage, product page or campaign page. Starts from the visitor's awareness level and the single action the page exists for, then builds a section-by-section page with headline options, proof placement, objection handling and calls to action, plus notes on what to test first."
 license: MIT
 metadata:
   title: "Landing Page Copy"

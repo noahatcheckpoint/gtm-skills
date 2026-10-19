@@ -1,6 +1,6 @@
 ---
 name: positioning-statement
-description: Use when a product, service or company needs clear positioning, or when the current positioning feels vague, interchangeable with competitors, or disconnected from why customers actually buy. Works from real alternatives and differentiated capabilities to a defensible category choice, a positioning statement, and a proof map the whole team can reuse.
+description: "Use when a product, service or company needs clear positioning, or when the current positioning feels vague, interchangeable with competitors, or disconnected from why customers actually buy. Works from real alternatives and differentiated capabilities to a defensible category choice, a positioning statement, and a proof map the whole team can reuse."
 license: MIT
 metadata:
   title: "Positioning Statement"

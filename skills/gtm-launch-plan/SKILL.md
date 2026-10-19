@@ -1,6 +1,6 @@
 ---
 name: gtm-launch-plan
-description: Use when planning the go-to-market launch of a product, feature, tier, segment or region. Sizes the launch to its business impact, sets measurable goals, sequences readiness work before and momentum work after launch day, assigns owners, and defines the signals that decide whether to double down or adjust.
+description: "Use when planning the go-to-market launch of a product, feature, tier, segment or region. Sizes the launch to its business impact, sets measurable goals, sequences readiness work before and momentum work after launch day, assigns owners, and defines the signals that decide whether to double down or adjust."
 license: MIT
 metadata:
   title: "GTM Launch Plan"

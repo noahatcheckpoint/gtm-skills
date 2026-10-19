@@ -1,6 +1,6 @@
 ---
 name: lifecycle-stage-model
-description: Designs a lifecycle stage model for contacts and accounts, from first touch to customer and advocate, with entry rules, owners, exit paths and recycling. Use when funnel reports disagree, when MQL and SQL mean different things to different teams, or when setting up or rebuilding a CRM.
+description: "Designs a lifecycle stage model for contacts and accounts, from first touch to customer and advocate, with entry rules, owners, exit paths and recycling. Use when funnel reports disagree, when MQL and SQL mean different things to different teams, or when setting up or rebuilding a CRM."
 license: MIT
 metadata:
   title: "Lifecycle Stage Model"

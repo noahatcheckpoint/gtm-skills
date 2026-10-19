@@ -1,6 +1,6 @@
 ---
 name: pipeline-stage-definitions
-description: Writes deal pipeline stage definitions anchored on buyer-verified exit criteria, with required fields, evidence per stage, stall thresholds and probability guidance. Use when stages mean different things to different reps, when forecasts miss because deals are over-staged, or when designing a pipeline for a new sales motion.
+description: "Writes deal pipeline stage definitions anchored on buyer-verified exit criteria, with required fields, evidence per stage, stall thresholds and probability guidance. Use when stages mean different things to different reps, when forecasts miss because deals are over-staged, or when designing a pipeline for a new sales motion."
 license: MIT
 metadata:
   title: "Pipeline Stage Definitions"

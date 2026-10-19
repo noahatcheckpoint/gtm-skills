@@ -1,6 +1,6 @@
 ---
 name: deal-qualification-review
-description: Reviews one opportunity or a whole pipeline against a qualification framework (MEDDICC by default, BANT or SPICED on request), scores each element on evidence, flags gaps and red flags, and produces the specific actions or questions that would close each gap, or a recommendation to disqualify. Use in deal reviews, before committing a deal to the forecast, or when coaching reps on qualification.
+description: "Reviews one opportunity or a whole pipeline against a qualification framework (MEDDICC by default, BANT or SPICED on request), scores each element on evidence, flags gaps and red flags, and produces the specific actions or questions that would close each gap, or a recommendation to disqualify. Use in deal reviews, before committing a deal to the forecast, or when coaching reps on qualification."
 license: MIT
 metadata:
   title: "Deal Qualification Review"

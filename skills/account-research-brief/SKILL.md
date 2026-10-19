@@ -1,6 +1,6 @@
 ---
 name: account-research-brief
-description: Use when a rep or marketer needs to research a target account before outreach, a first meeting or an account-based campaign. Organizes public information into a one-page brief covering business context, strategic priorities, likely pains, buying committee, triggers and a recommended entry angle, with every claim tied to a source and confidence level.
+description: "Use when a rep or marketer needs to research a target account before outreach, a first meeting or an account-based campaign. Organizes public information into a one-page brief covering business context, strategic priorities, likely pains, buying committee, triggers and a recommended entry angle, with every claim tied to a source and confidence level."
 license: MIT
 metadata:
   title: "Account Research Brief"

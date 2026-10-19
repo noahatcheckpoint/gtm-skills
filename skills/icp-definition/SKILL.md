@@ -1,6 +1,6 @@
 ---
 name: icp-definition
-description: Use when a team needs to define or sharpen its ideal customer profile from real customer evidence. Builds firmographic, situational and behavioral criteria, separates the ICP from buyer personas, and produces a scored fit rubric plus explicit disqualifiers that sales, marketing and RevOps can apply to any account list.
+description: "Use when a team needs to define or sharpen its ideal customer profile from real customer evidence. Builds firmographic, situational and behavioral criteria, separates the ICP from buyer personas, and produces a scored fit rubric plus explicit disqualifiers that sales, marketing and RevOps can apply to any account list."
 license: MIT
 metadata:
   title: "ICP Definition"

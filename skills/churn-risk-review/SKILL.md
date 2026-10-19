@@ -1,6 +1,6 @@
 ---
 name: churn-risk-review
-description: Reviews a book of customer accounts for churn and downgrade risk using usage, relationship, support, commercial and outcome signals, tiers each account by risk and renewal proximity, diagnoses the likely cause and writes a save plan per at-risk account. Use ahead of renewal quarters, in weekly customer success reviews, after a churn spike, or when designing a customer health score.
+description: "Reviews a book of customer accounts for churn and downgrade risk using usage, relationship, support, commercial and outcome signals, tiers each account by risk and renewal proximity, diagnoses the likely cause and writes a save plan per at-risk account. Use ahead of renewal quarters, in weekly customer success reviews, after a churn spike, or when designing a customer health score."
 license: MIT
 metadata:
   title: "Churn Risk Review"

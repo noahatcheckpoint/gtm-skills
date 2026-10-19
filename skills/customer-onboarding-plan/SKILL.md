@@ -1,6 +1,6 @@
 ---
 name: customer-onboarding-plan
-description: Creates a B2B customer onboarding plan from signed contract to first value and full adoption: sales-to-success handoff brief, kickoff agenda, success criteria, phased milestones with owners on both sides, time-to-value targets, risk triggers and a graduation checklist. Use for each new customer, when designing a repeatable onboarding programme, or when new customers take too long to see value.
+description: "Creates a B2B customer onboarding plan from signed contract to first value and full adoption: sales-to-success handoff brief, kickoff agenda, success criteria, phased milestones with owners on both sides, time-to-value targets, risk triggers and a graduation checklist. Use for each new customer, when designing a repeatable onboarding programme, or when new customers take too long to see value."
 license: MIT
 metadata:
   title: "Customer Onboarding Plan"

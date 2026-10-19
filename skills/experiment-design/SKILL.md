@@ -1,6 +1,6 @@
 ---
 name: experiment-design
-description: Designs a go-to-market experiment (landing page, email, pricing page, outbound sequence, onboarding flow) with a falsifiable hypothesis, one primary metric, guardrail metrics, sample size and duration estimates, randomisation unit, stopping rules and a decision plan written before launch. Use before running any A/B or holdout test, when test results keep being inconclusive, or when low traffic makes classic A/B testing doubtful.
+description: "Designs a go-to-market experiment (landing page, email, pricing page, outbound sequence, onboarding flow) with a falsifiable hypothesis, one primary metric, guardrail metrics, sample size and duration estimates, randomisation unit, stopping rules and a decision plan written before launch. Use before running any A/B or holdout test, when test results keep being inconclusive, or when low traffic makes classic A/B testing doubtful."
 license: MIT
 metadata:
   title: "Experiment Design"

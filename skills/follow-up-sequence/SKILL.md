@@ -1,6 +1,6 @@
 ---
 name: follow-up-sequence
-description: Use when building the follow-up touches after a first cold email, or fixing a sequence where replies die after step one. Designs a multi-step, multi-channel cadence where every touch adds a new angle or asset, spacing widens over time, each message stands alone, and the final touch closes the loop politely.
+description: "Use when building the follow-up touches after a first cold email, or fixing a sequence where replies die after step one. Designs a multi-step, multi-channel cadence where every touch adds a new angle or asset, spacing widens over time, each message stands alone, and the final touch closes the loop politely."
 license: MIT
 metadata:
   title: "Follow-Up Sequence"

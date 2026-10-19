@@ -1,6 +1,6 @@
 ---
 name: email-deliverability-audit
-description: Use when outbound or marketing emails land in spam, open or reply rates drop suddenly, a new sending domain is being set up, or before scaling volume. Audits authentication, domain and sending infrastructure, list quality, sending behavior and content, then ranks fixes by impact and gives a recovery or warm-up plan.
+description: "Use when outbound or marketing emails land in spam, open or reply rates drop suddenly, a new sending domain is being set up, or before scaling volume. Audits authentication, domain and sending infrastructure, list quality, sending behavior and content, then ranks fixes by impact and gives a recovery or warm-up plan."
 license: MIT
 metadata:
   title: "Email Deliverability Audit"

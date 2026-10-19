@@ -1,6 +1,6 @@
 ---
 name: mutual-action-plan
-description: Builds a mutual action plan (shared close plan) for a B2B deal: a one-paragraph why-now summary, the agreed success criteria, a dated timeline of buyer and seller steps working back from the buyer's go-live date, owners on both sides, risks and the decision process. Use once a buyer agrees to evaluate seriously, when deals with several stakeholders stall, or when a close date keeps slipping.
+description: "Builds a mutual action plan (shared close plan) for a B2B deal: a one-paragraph why-now summary, the agreed success criteria, a dated timeline of buyer and seller steps working back from the buyer's go-live date, owners on both sides, risks and the decision process. Use once a buyer agrees to evaluate seriously, when deals with several stakeholders stall, or when a close date keeps slipping."
 license: MIT
 metadata:
   title: "Mutual Action Plan"

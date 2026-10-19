@@ -1,6 +1,6 @@
 ---
 name: discovery-call-prep
-description: Prepares a seller for a B2B discovery call: account and attendee research summary, working hypotheses about the problem, a sequenced question plan that moves from current state to impact to decision process, a call agenda, and a post-call recap template. Use before a first meeting, a re-discovery with a new stakeholder, or when calls keep ending without a clear next step.
+description: "Prepares a seller for a B2B discovery call: account and attendee research summary, working hypotheses about the problem, a sequenced question plan that moves from current state to impact to decision process, a call agenda, and a post-call recap template. Use before a first meeting, a re-discovery with a new stakeholder, or when calls keep ending without a clear next step."
 license: MIT
 metadata:
   title: "Discovery Call Prep"
