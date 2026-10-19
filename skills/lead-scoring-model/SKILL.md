@@ -27,7 +27,7 @@ Produces a scoring specification a CRM admin can implement and a sales leader ca
 Ask for these before building. If data is missing, say which weights will be assumptions.
 
 1. **ICP and anti-ICP:** firmographics, roles, and the profiles you never want to see.
-2. **Outcome data:** closed won and closed lost deals for the last 6 to 12 months, with the attributes and activities of the contacts involved. Even a spreadsheet export works.
+2. **Outcome data:** every lead (or account) created in the last 12 to 18 months, with its attributes as they stood when it arrived and what happened next: became an opportunity or not, then won or lost. Even a spreadsheet export works. Won and lost deals alone are not enough, because they only describe leads that already reached sales.
 3. **Available signals:** form fields, enrichment fields, web and email activity, product usage, third-party intent if any.
 4. **Current funnel volumes:** leads per month, current MQLs, MQL to opportunity rate.
 5. **Sales capacity:** how many new leads per rep per week can be worked properly.
@@ -37,13 +37,13 @@ Ask for these before building. If data is missing, say which weights will be ass
 
 1. **Split the score into two axes.** Fit asks "should we sell to them?" Intent asks "are they leaning in now?" Report them separately (for example a letter grade for fit and a number for intent). A single blended number hides a perfect-fit account that is cold and a hot lead from a company you cannot serve.
 2. **Route hand-raisers around the model.** A demo request from an in-ICP company goes straight to sales. Scoring exists for the ambiguous middle, not for people who already asked.
-3. **Derive fit weights from lift, not opinion.** For each attribute value (industry, size band, role seniority, region), compute its win rate and divide by the overall win rate. A value with 2x lift earns roughly double the points of a 1x value; values below 0.5x earn zero or negative. With fewer than about 50 won deals, treat weights as hypotheses and say so.
+3. **Derive fit weights from lift, not opinion.** Work on the full cohort of leads created in a period, not just deals, and use each attribute as it was at creation (fields enriched after the deal leak the outcome back in). For each value (industry, size band, role seniority, region), compute its lead-to-opportunity rate and divide by the cohort's overall rate; repeat with win rate as a second view. A value with 2x lift earns roughly double the points of a 1x value; values below 0.5x earn zero or negative. Merge thin cells before trusting them (heuristic: under about 30 leads or 10 conversions), and with fewer than about 50 conversions overall, label weights as hypotheses.
 4. **Pick intent signals that precede revenue.** Rank activities by how often they appear in the 30 to 60 days before won deals versus lost or stalled ones. Typical high-value signals: pricing page visits, return visits from several people at one account, product usage milestones, replies to sales emails. Low-value: single blog views, opening newsletters.
-5. **Add negative scoring.** Competitor domains, students, job seekers, free email domains (if B2B only), unsupported countries, unsubscribes, hard bounces. Some of these should disqualify outright instead of subtracting points.
+5. **Add negative scoring, and keep suppression outside it.** Competitor domains, students, job seekers, free email domains (if B2B only) and unsupported countries subtract points or disqualify. Unsubscribes and hard bounces are not score events: an unsubscribe suppresses the contact for the channel and scope they opted out of, a hard bounce suppresses that address, and no intent score can bring either back into marketing or sequences.
 6. **Add decay.** Intent should fade when activity stops. Heuristic: reduce intent points by a fixed share each month without activity, or reset intent to zero after 90 days of silence. Fit does not decay, but it must be refreshed when enrichment data changes.
 7. **Cap repeated actions.** Ten visits to the same blog post should not equal one pricing visit. Cap points per signal per period.
 8. **Set the threshold from capacity.** Work backwards: if reps can handle 120 new MQLs a month and the model scores 600 leads above 40, the threshold is too low. Choose the cut that delivers the volume sales can work within the SLA, then check the conversion rate at that cut.
-9. **Backtest.** Score last period's leads with the new model. Show conversion to opportunity by score band. A good model shows a clear staircase: each higher band converts noticeably better than the one below. If bands are flat, the weights are wrong.
+9. **Backtest out of time.** Fit the weights on an earlier period, then score leads from a later period the weights never saw. Show conversion to opportunity by score band. A good model shows a clear staircase: each higher band converts noticeably better than the one below. If bands are flat, the weights are wrong.
 10. **Define governance.** Owner, review cadence (quarterly is typical), change log, and a rule that only a few weights change per review so you can see what caused any shift.
 
 ## Output format
@@ -55,13 +55,17 @@ Ask for these before building. If data is missing, say which weights will be ass
 - [action] from [fit condition]
 
 ## Fit score (grade A to D)
-| Attribute | Value | Lift vs baseline | Points | Evidence (n deals) |
+| Attribute | Value | Lift vs baseline | Points | Evidence (n leads / conversions) |
 
 ## Intent score (0 to 100)
 | Signal | Points | Cap per 30 days | Why it matters |
 
 ## Negative and disqualifying rules
 | Condition | Effect (minus points / disqualify) |
+
+## Suppression (outside the score)
+- Unsubscribed: suppressed for [channel and scope]
+- Hard bounce: address suppressed
 
 ## Decay
 [rule]
@@ -85,6 +89,8 @@ Review cadence, change log location, success metrics.
 - Every fit weight cites lift or is labelled as an assumption.
 - Hand-raisers bypass the score.
 - Negative rules include competitors and non-buyers; some disqualify outright.
+- Unsubscribes and hard bounces trigger suppression, never just a point deduction.
+- Weights come from the full lead cohort with point-in-time attributes, and the backtest uses a later period.
 - Intent decays and repeated actions are capped.
 - Threshold is justified by sales capacity and backtest conversion.
 - Backtest shows conversion rising band by band, or the output says it does not.
@@ -102,7 +108,7 @@ Review cadence, change log location, success metrics.
 
 ## Example prompts
 
-- "Build a lead scoring model for our mid-market SaaS. Here is an export of last year's won and lost deals."
+- "Build a lead scoring model for our mid-market SaaS. Here is an export of last year's leads and what happened to each."
 - "Sales says our MQLs are junk. Review our scoring rules and tell me what to change."
 - "Design separate fit and intent scores and an MQL threshold that matches 4 SDRs' capacity."
 - "Add decay and negative scoring to our existing model."

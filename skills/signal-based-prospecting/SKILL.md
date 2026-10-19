@@ -43,7 +43,7 @@ Ask for these first:
    - *Relationship signals:* a former customer or champion joining the account, a mutual connection, a shared investor.
 3. **Explain the causal link.** For each signal write one sentence on why it creates or reveals the problem you solve. Drop signals you cannot explain; correlation without a reason tends to disappear.
 4. **Assess detectability.** For each signal note the source, how reliably it can be detected, and the false-positive risk. A job posting is verifiable; a vague third-party intent spike may not be.
-5. **Weight and decay.** Assign points by predictive strength (for example 10 to 40). Set a half-life: a funding round may stay relevant for about 90 days, a pricing-page visit for a week or two, a new executive for their first 3 to 6 months. Score equals points multiplied by a freshness factor.
+5. **Weight and decay.** Assign points by predictive strength (for example 10 to 40). Pick one decay model and use it for every signal. The default here is stepped windows, because reps can read them: each signal gets a relevance window (a funding round perhaps 90 days, a pricing-page visit a week or two, a new executive their first 3 to 6 months) split into named steps. Teams with enough outcome data can use an exponential half-life instead, but not both. Treat the starting points and windows as guesses, then check them against which signals actually preceded meetings and wins, and adjust.
 6. **Combine with fit.** Only score accounts that pass the ICP. Multiple signals at once (stacking) should push an account to the top; one weak signal alone should not.
 7. **Map signals to plays.** For each signal write the angle and the opener: what you would say to someone at that moment. The message should reference the situation, not the data source.
 8. **Set the operating rhythm.** Decide how often scores refresh, the threshold that triggers outreach, how many accounts per rep per week, and how to log outcomes so weights can be recalibrated quarterly.
@@ -58,7 +58,7 @@ Signal playbook: [offer], [date]
 
 Scoring rule
 - Only ICP Tier 1-2 accounts are scored.
-- Score = sum of (points x freshness factor). Freshness: 100% in the first third of the window, 50% in the middle third, 25% in the last third, 0 after.
+- Score = sum of (points x freshness factor). Decay model: stepped windows. Fresh (first third of the window) 100%, aging (middle third) 50%, fading (last third) 25%, expired 0. Starting values, to be recalibrated against meetings and wins.
 - Outreach threshold: [score]. Stacking bonus: [rule].
 
 Openers by signal

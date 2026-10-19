@@ -48,7 +48,7 @@ Ask for these before ideating:
 4. **Score the ideas.** Rate each 1 to 5 on: audience size (enough accounts to matter), signal reliability (can you actually detect the trigger), relevance (how urgent the problem is when the trigger fires), effort (inverse: 5 means easy), and proof strength. Sum the scores.
 5. **Balance the portfolio.** Pick three to five ideas: at least one quick win (low effort, available data), one scalable always-on play, and one higher-effort, high-value play for top accounts.
 6. **Brief the winners.** For each selected idea write a one-page brief a copywriter or rep can execute without a meeting.
-7. **Define success.** Set a target positive reply rate or meeting count per campaign and a minimum sample size before judging (heuristic: at least a few hundred contacts for scaled campaigns, or 20 to 30 accounts for highly tailored ones).
+7. **Define success.** Set a target positive reply rate or meeting count per campaign, and fix the sample before judging. Size it from the baseline rate and the smallest difference that would change your decision: rare outcomes need large samples (detecting a move from 2 to 4 percent positive replies at conventional 95 percent confidence and 80 percent power takes roughly a thousand contacts per variant). Contacts at one account share a decision, so evaluate tailored and account-based plays at account level. When the account list is too small for statistical confidence, judge on qualitative evidence (reply content, objections raised, meetings with the right roles) and say so.
 
 ## Output format
 
@@ -82,7 +82,7 @@ Campaign brief: [name]
 - Offers have standalone value; not every offer is a demo.
 - Ideas are scored and the scoring is visible.
 - The portfolio mixes quick wins with longer plays.
-- Briefs include success metrics and a minimum sample size.
+- Briefs include success metrics and a sample size derived from baseline rate and decision-relevant difference, or state that the play is judged qualitatively.
 
 ## Common mistakes
 

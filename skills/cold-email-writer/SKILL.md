@@ -34,8 +34,18 @@ Ask for these before writing. If the user has no trigger or proof, write anyway 
 4. **Proof:** one result for a similar company, a recognizable customer type, or a concrete number.
 5. **The ask:** what a good outcome looks like (reply, referral to the right person, a short call).
 6. **Sender:** who is sending and their credibility (a founder writes differently from an SDR).
+7. **Jurisdiction and data basis:** the countries recipients are in, how their addresses were obtained, and the sender's postal address and opt-out method.
 
 ## Process
+
+Before drafting, run the compliance gate (requirements as of October 2026; this is a checklist, not legal advice, so have counsel confirm for your markets):
+
+- **United States (CAN-SPAM, which covers B2B mail too):** truthful sender and routing information, a subject line that matches the content, a valid physical postal address, and a clear opt-out that keeps working for at least 30 days after sending. Honor opt-outs within 10 business days.
+- **EU and EEA:** GDPR requires a lawful basis for processing the contact's data (for B2B prospecting usually legitimate interests, backed by a written balancing test) and telling the recipient where their data came from. National ePrivacy laws then decide whether unsolicited email is allowed at all, and several are stricter than the baseline. Germany's unfair competition law (UWG section 7) treats email advertising without prior express consent as an unreasonable nuisance even between businesses, with only a narrow exception for existing customers, so cold email to German recipients needs consent or a deliberate legal decision.
+- **Everywhere:** identify the sender honestly, include a working opt-out in every email, and suppress opted-out people across every mailbox and domain you send from.
+- **High volume:** once a domain sends roughly 5,000 or more messages a day to Gmail or Outlook.com personal accounts, mailbox providers also require SPF, DKIM, aligned DMARC and one-click unsubscribe headers (see an email deliverability audit for the full matrix).
+
+If recipient jurisdiction or the data basis is unknown, say so in the output and do not present the email as ready to send.
 
 1. **Pick the angle.** Choose one of these shapes based on the inputs:
    - *Trigger led:* "Saw X, which usually means Y." Best when the trigger is strong and recent.
@@ -65,8 +75,10 @@ Body:
 [one-line ask]
 
 [sign-off]
+[sender identity, postal address where required, opt-out line]
 
 Word count: [n]
+Compliance gate: [jurisdictions, lawful basis or consent, open issues]
 
 Variant B ([angle]): subject + body
 Variant C ([angle]): subject + body
@@ -81,6 +93,7 @@ What would make this stronger: [missing inputs]
 - Exactly one problem, one proof point and one ask.
 - Body under about 120 words; subject two to four words.
 - Plain text, no images, at most one link (ideally none in a first touch).
+- The compliance gate is answered for every recipient jurisdiction, with sender identification, postal address where required and a working opt-out.
 - "You" and "your" outnumber "we" and "our".
 - No phrases that read automated: hope-you're-well pleasantries, "noticed your profile and wanted to connect", "quick question" used as filler.
 - Claims are specific and could be backed up if the prospect asks.

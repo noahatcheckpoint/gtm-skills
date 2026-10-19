@@ -40,9 +40,9 @@ Ask for these before designing:
 2. **Pick one primary metric.** Choose the metric closest to revenue that still has enough volume to measure in the time available. Clicks are easy to move and often do not translate into pipeline; meetings booked or qualified signups are better if volume allows.
 3. **Add guardrails.** Two or three metrics that must not deteriorate beyond a set tolerance (for example, lead fit score, unsubscribe rate, downstream conversion to opportunity). A variant that wins the primary metric but breaks a guardrail does not ship.
 4. **Choose the randomisation unit.** Visitor, account, or rep territory. In B2B, randomise by account when several people from one company might see both variants, or results will be contaminated.
-5. **Estimate sample size and duration.** Use any standard sample size calculator with the baseline rate, the smallest lift worth acting on, 95% confidence, and 80% power as common defaults. Divide by weekly volume to get duration. As a heuristic, run for at least one full business cycle (often two weeks minimum) to cover weekday patterns. Remember that small baselines need far more traffic to detect the same relative lift.
+5. **Estimate sample size and duration.** Fix the design before calculating: randomisation unit, allocation ratio (50/50 or unequal), one-sided or two-sided test, and expected attrition. A standard calculator is valid only when the unit you randomise is the unit you measure, such as visitors. If you randomise accounts or territories but measure people or leads, outcomes within a cluster move together, so the calculation must use the number of clusters and an intracluster correlation estimate (from past data, or a cautious assumed value); an ordinary calculator will overstate your power, often badly when there are only a few dozen clusters. Common defaults are 95% confidence and 80% power with the smallest lift worth acting on. Divide by weekly volume to get duration. As a heuristic, run for at least one full business cycle (often two weeks minimum) to cover weekday patterns. Remember that small baselines need far more traffic to detect the same relative lift.
 6. **Check feasibility honestly.** If the required duration is longer than you can run, choose a different approach: test a bigger change, move the metric up the funnel, pool similar pages, or use a qualitative method (user tests, sales call feedback) instead. Running an underpowered test and calling it a result is worse than not testing.
-7. **Set stopping rules before launch.** Run until the planned sample is reached. Do not stop early because one variant looks ahead; repeated peeking greatly increases false winners and exaggerates effect sizes. The only early stop is a guardrail breach or a broken implementation.
+7. **Set stopping rules before launch.** The default is a fixed horizon: run until the planned sample is reached, and stop early only for a guardrail breach or a broken implementation. Unplanned peeking, stopping as soon as one variant looks ahead, greatly increases false winners and exaggerates effect sizes. If you need the option to stop early for a clear win or for futility, choose a sequential design up front (group-sequential with alpha spending, or a Bayesian rule with a pre-set decision threshold), write down the interim looks and boundaries, and size the test for it.
 8. **Plan a quality check.** Verify both variants render and track correctly on day one, and that groups are balanced in size and mix (a sample ratio check).
 9. **Write the decision table.** For each outcome (clear win, clear loss, inconclusive, guardrail breach) state the action now. Inconclusive usually means keeping the simpler or cheaper option and logging what was learned.
 10. **Plan the write-up.** What was tested, the result with a confidence interval, the decision, and what the next test is. Store it in a shared log so teams stop repeating old tests.
@@ -63,8 +63,9 @@ Primary: [metric, definition, data source]
 Guardrails: [metric, tolerance]
 
 ## Design
-Randomisation unit: [visitor / account / territory]
-Split: [50/50]   Audience and exclusions: [ ]
+Randomisation unit: [visitor / account / territory]   Measurement unit: [ ]
+Split: [50/50]   Sidedness: [ ]   Clusters per arm and ICC (if clustered): [ ]
+Audience and exclusions: [ ]   Expected attrition: [ ]
 
 ## Sample size and duration
 Baseline [ ]  Minimum lift worth acting on [ ]  Confidence [95%]  Power [80%]
@@ -72,7 +73,8 @@ Required per variant [ ]   Weekly volume [ ]   Duration [ ] weeks
 Feasible? [yes / no, and alternative]
 
 ## Stopping rules
-[planned sample reached; early stop only for guardrail breach or broken tracking]
+[fixed horizon: planned sample reached; early stop only for guardrail breach or broken tracking]
+[or sequential: interim looks at [ ], efficacy and futility boundaries [ ], method [ ]]
 
 ## Decision table
 | Outcome | Action |
@@ -93,7 +95,8 @@ Feasible? [yes / no, and alternative]
 - Guardrails have explicit tolerances.
 - The randomisation unit prevents the same account seeing both variants where that matters.
 - Sample size and duration are estimated and feasibility is judged honestly.
-- Stopping rules forbid stopping on a peek.
+- Stopping rules forbid unplanned peeking; any early efficacy or futility stop comes from a pre-specified sequential design.
+- Clustered designs are sized on the number of clusters with an intracluster correlation, not with an ordinary calculator.
 - A decision is written for every outcome before launch.
 
 ## Common mistakes

@@ -46,7 +46,7 @@ Run these passes in order. Later passes assume earlier fixes are done.
 6. **Voice pass.** Align tone with the guidance: contractions or not, formality, sentence rhythm. Remove patterns that make text sound machine-written: stacked adjectives, "not only X but also Y" constructions repeated, lists of exactly three everywhere, empty openers like "In today's fast-paced world", and filler transitions.
 7. **Structure pass.** Check headings, paragraph length and order. Headings should carry meaning when skimmed. Put the most important point first in each section.
 8. **Polish pass.** Grammar, spelling, punctuation, consistent capitalization, number formatting, product name consistency, and broken parallelism in lists. Check any calls to action say what happens next.
-9. **Length check.** Compare final length to the original and to constraints. Medium edits typically shorten copy by 15 to 30 percent without losing meaning.
+9. **Length check.** Check the final length against the channel's real constraint (character limits, the space a layout allows, how long the reader has) and against what the reader needs to act. Report the change from the original as an observation, never a target: a sweep that removes padding may cut a lot, while one that adds missing proof or a clear next step may make copy longer.
 
 ## Output format
 

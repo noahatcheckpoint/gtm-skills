@@ -39,7 +39,7 @@ Ask for these before reviewing:
 
 1. **Group signals into five families** and assess each account on all of them:
    - Usage: falling active users, seats unused, key features abandoned, logins concentrated in one person.
-   - Relationship: champion or sponsor left, no executive contact in six months, meetings declined, slow replies.
+   - Relationship: champion or sponsor left, no contact with the people who decide the renewal in six months, meetings declined, slow replies. Map who decides per segment: in enterprise deals it is usually an executive budget owner plus procurement, while in SMB, departmental and product-led accounts the daily users or their team lead often hold the budget themselves. Record who influences, champions, administers, buys and signs.
    - Support: repeated tickets on the same issue, escalations, a recent serious incident, worsening satisfaction.
    - Commercial: late payments, requests to reduce seats, procurement suddenly involved, budget cuts announced, acquisition by another company.
    - Outcomes: the goals they bought for are not being reached, or nobody can say what the goals were.
@@ -86,6 +86,7 @@ Refresh cadence, recalibration plan.
 ## Quality checklist
 
 - Every account is assessed on all five signal families or the gap is noted.
+- The renewal decision-makers are mapped for each account, not assumed from its segment.
 - Ratings consider trend, not only current level.
 - Priority combines risk, renewal date, and value.
 - Each at-risk account has a root cause, not just a symptom.
@@ -97,7 +98,7 @@ Refresh cadence, recalibration plan.
 ## Common mistakes
 
 - **Starting the save conversation at renewal.** By then the customer has usually decided. Risk work must start two or more quarters ahead.
-- **Trusting a friendly user over silence from the sponsor.** Daily users rarely make the renewal decision.
+- **Assuming who decides the renewal.** A friendly user does not offset silence from an enterprise budget owner, but in a small or product-led account that user may be the budget owner. Map the actual renewal committee before reading relationship signals.
 - **Usage counts without context.** Login volume can look fine while the team that bought the product has stopped using it.
 - **Discounting to save an adoption problem.** A cheaper product nobody uses still churns next year.
 - **Health scores nobody calibrates.** If green accounts churn, the weights are wrong; compare scores with actual outcomes each cycle.

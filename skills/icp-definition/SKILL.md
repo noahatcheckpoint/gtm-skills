@@ -46,7 +46,7 @@ Ask for these before drafting. If the user has no data, say so plainly and label
 3. **Find the pain link.** For every criterion, write one line explaining why it makes the problem more painful or the solution more valuable. If you cannot write that line, drop the criterion. "Series B" is useless on its own; "Series B, so the board now expects a repeatable pipeline number" is a criterion.
 4. **Write disqualifiers.** List hard no's: conditions under which you will not win or the customer will not succeed. Disqualifiers save more rep time than qualifiers do, and they are where the worst-customer list pays off.
 5. **Build the fit score.** Convert criteria into a weighted rubric totaling 100 points. Weight by how strongly each criterion separated best from worst accounts, not by how easy it is to measure. Set tiers: Tier 1 (strong fit), Tier 2 (workable), Tier 3 (nurture only).
-6. **Test against reality.** Score the user's best and worst accounts with the rubric. Best accounts should land in Tier 1 and worst accounts should land in Tier 3 or hit a disqualifier. If they do not, adjust weights and say what you changed.
+6. **Test against accounts the weights never saw.** Set weights on one group of accounts, then score a separate group: a held-back slice of customers and lost deals, or accounts won and lost after the period you analyzed. Report the misses in both directions (good customers scored Tier 3, poor ones scored Tier 1) and the hit rate per tier. Change weights only when a miss reveals a pattern across several accounts; keep genuine exceptions as documented exceptions rather than bending the rubric until every account fits, which only memorizes a small sample. With very few accounts, say that the rubric is a hypothesis and name the cohort that will validate it.
 7. **Size the result.** Estimate how many accounts match Tier 1. Heuristic: if fewer than a few hundred accounts qualify for a team with several reps, the ICP is probably too narrow for outbound; if tens of thousands qualify, it is probably not specific enough to change behavior.
 8. **Name the personas inside.** List the two or three roles that typically initiate, champion and sign, so the ICP hands off cleanly to persona and messaging work.
 
@@ -86,7 +86,7 @@ Open questions / assumptions to test: ...
 
 - Every criterion has a stated link to the customer's pain and a way to observe it.
 - At least three disqualifiers, each traceable to a worst-customer or lost-deal pattern.
-- The rubric was tested against the user's own accounts and the results are shown.
+- The rubric was validated on accounts not used to set the weights, with misses in both directions reported.
 - Firmographics are not the only layer; at least one situational trigger is included.
 - The output says clearly which parts are evidence and which are assumptions.
 - No criterion depends on data the team cannot get.

@@ -37,16 +37,16 @@ Ask for these before auditing. Partial data is fine; mark gaps.
 
 1. **Build the inventory by category.** Group tools into a standard map so overlaps become visible: CRM, marketing automation, sales engagement, data and enrichment, conversation intelligence, scheduling, intent and website identification, analytics and BI, CS platform, content and enablement, contract and quoting, integration middleware. Include tools bought on personal cards; they are often the most redundant.
 2. **Score each tool on five dimensions (1 to 5):**
-   - Adoption: active users divided by paid seats. Below about half is a warning sign.
+   - Utilization: measured in the unit the tool's value comes in. For seat-based user tools, active users divided by paid seats (below about half is a warning sign; use quarterly active users for seasonal tools). For API, middleware, enrichment and admin-only tools, use records processed, workflows completed or credits consumed versus purchased.
    - Overlap: does another tool already do the core job?
    - Integration: does it write back to the CRM cleanly, or create an island of data?
-   - Outcome link: can you tie it to a pipeline or retention metric, even roughly?
+   - Outcome link: the result the category exists for, even roughly. Pipeline or retention for revenue tools; hours saved, errors avoided or processes kept running for infrastructure and admin tools; risk controlled for compliance and security tools. Do not score a tool low only because it cannot be attributed to revenue.
    - Switching cost: data migration, retraining, and workflow rebuild effort.
 3. **Calculate total cost of ownership.** License plus admin hours per month (at a loaded hourly rate) plus middleware costs plus any agency fees. Admin time is often the largest hidden cost, especially for tools that need constant rule maintenance.
 4. **Map the data flow.** Draw the path of a lead from first touch to closed won to renewal, noting which system is the source of truth for each key field (owner, lifecycle stage, revenue). Two systems both claiming to own a field is a red flag.
 5. **Identify the workflow gaps.** Where do people export to spreadsheets, re-key data, or switch tools to complete one job? Those are the places where a tool is missing, misconfigured, or unloved.
 6. **Decide per tool:**
-   - Keep: high adoption, unique job, integrated.
+   - Keep: high utilization, unique job, integrated.
    - Optimise: right tool, poor configuration or training.
    - Consolidate: core job covered by another tool you already pay for.
    - Replace: needed job, wrong tool.
@@ -64,7 +64,7 @@ Ask for these before auditing. Partial data is fine; mark gaps.
 Total annual spend [ ], tools [n], estimated savings [ ], top three recommendations.
 
 ## Inventory and scores
-| Tool | Category | Owner | Annual cost | Seats paid/active | Adoption | Overlap | Integration | Outcome link | Switching cost | TCO | Decision |
+| Tool | Category | Owner | Annual cost | Utilization measure and value | Utilization score | Overlap | Integration | Outcome link | Switching cost | TCO | Decision |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Overlap map
@@ -91,7 +91,7 @@ Total annual spend [ ], tools [n], estimated savings [ ], top three recommendati
 ## Quality checklist
 
 - Every tool appears in a category, including card-paid tools.
-- Adoption is measured on active users versus paid seats, or marked unknown.
+- Utilization uses a measure that fits the tool's category (seats, records, workflows, credits), or is marked unknown.
 - TCO includes admin time and middleware, not just license.
 - Each key field has one source of truth, and conflicts are named.
 - Every retire or consolidate decision lists the workflows and data affected.

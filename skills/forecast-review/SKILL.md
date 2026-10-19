@@ -43,7 +43,7 @@ Ask for these before reviewing:
 3. **Flag hygiene risks across the list:** close dates in the past, no activity in 14 days or more, close date pushed twice or more, amount changed late, deals that skipped stages, single-threaded deals with one contact.
 4. **Build three views of the number:**
    - Rep call: sum of commit plus the rep's judgment on best case.
-   - Weighted: amount times historical win rate by stage or category.
+   - Weighted: amount times the historical rate at which comparable deals closed within the time left in the period. A plain stage win rate counts wins that took months and so overstates an in-period number. Build the rates from past deals at the same point in a period, split by stage, time already spent in stage, deal type and amount band, and treat deals likely to slip together (one budget freeze, one large buyer) as correlated rather than independent. Backtest the method on a few past periods and use it only if it would have landed close.
    - Run rate or history: what similar periods closed relative to starting pipeline.
    If the views differ by more than about 15%, explain the gap before choosing a number.
 5. **Check coverage.** Remaining target versus open pipeline in period. Many B2B teams use 3x coverage early in a quarter as a rule of thumb, but your own historical conversion is a better guide. Coverage that only works if every best case deal closes is a gap, not coverage.
@@ -68,7 +68,7 @@ Ask for these before reviewing:
 ## Three views
 | View | Number | Notes |
 | Rep call | | |
-| Weighted (historical rates) | | |
+| Weighted (horizon-matched, backtested) | | |
 | Historical run rate | | |
 
 ## Coverage

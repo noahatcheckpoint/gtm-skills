@@ -46,7 +46,7 @@ Ask for these first:
    - Video pages: `VideoObject`.
 2. **Respect the visibility rule.** Mark up only information that appears on the page for users. Ratings must come from real reviews shown on the page; prices must match the visible price. Markup that misrepresents content can lead to a manual action that removes rich result eligibility.
 3. **Know what is restricted.** Some search features have narrowed: FAQ rich results are now shown mainly for authoritative government and health sites, and how-to rich results have been retired. FAQ markup can still describe content accurately, but do not promise rich results from it. Check the search engine's current documentation before investing in a type for its display benefit.
-4. **Build one connected graph.** Give key entities a stable identifier (`@id`, usually the page URL plus a fragment such as `#organization`). Reference the organization as publisher of articles, people as authors, and the website as part of the organization. Use `sameAs` to link to official profiles. Consistent entities help search and AI systems resolve who you are.
+4. **Build one connected graph.** Give key entities a stable identifier (`@id`, usually the page URL plus a fragment such as `#organization`). Reference the organization as publisher of articles, people as authors, and the website as part of the organization. Use `sameAs` to link to official profiles. Consistent entities help search and AI systems resolve who you are. An `@id` reference does not pull in properties from another page, because consumers generally read each page's markup on its own. Wherever a page's feature needs publisher or organization details (articles, for example), include the Organization node with name, url and logo in that page's graph, reusing the same `@id` and identical values.
 5. **Write JSON-LD.** Prefer JSON-LD in the page head or body over inline microdata, because it is easier to maintain. Include required properties for any rich result you target and add recommended ones where the information exists. Use full URLs and ISO 8601 dates.
 6. **Template, do not hand-code.** Specify which fields are pulled from the content system (title, author, dates, image) so markup updates when content does. Hand-written markup on hundreds of pages drifts out of date.
 7. **Validate.** Test with a schema validator and the search engine's rich results test. Fix errors first; review warnings for missing recommended properties.
@@ -79,7 +79,13 @@ Then, for each template, a fenced JSON-LD block, for example:
   "datePublished": "2026-01-15",
   "dateModified": "2026-02-01",
   "author": { "@type": "Person", "@id": "https://example.com/team/jane#person", "name": "[author name]" },
-  "publisher": { "@id": "https://example.com/#organization" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "[brand name]",
+    "logo": "https://example.com/images/logo.png",
+    "url": "https://example.com/",
+    "@id": "https://example.com/#organization"
+  },
   "mainEntityOfPage": "https://example.com/blog/[slug]",
   "image": "https://example.com/images/[file].jpg"
 }
@@ -92,7 +98,7 @@ Close with a validation and monitoring checklist and a list of open data gaps.
 - Every marked-up value is visible on the page and matches it exactly.
 - Types fit the page's actual purpose; no product markup on blog posts, no local business markup without a visitable location.
 - Restricted or retired rich result types are flagged honestly.
-- Entities use stable `@id` values and reference each other.
+- Entities use stable `@id` values and reference each other, and each page still carries the properties its own feature requires.
 - Field sources are specified so markup stays in sync with content.
 - JSON-LD is syntactically valid (quotes, commas, brackets) and uses absolute URLs and ISO dates.
 
@@ -100,7 +106,7 @@ Close with a validation and monitoring checklist and a list of open data gaps.
 
 - **Invisible or inflated data.** Marking up reviews, prices or FAQs that are not on the page risks penalties and erodes trust.
 - **Expecting guaranteed rich results.** Valid markup makes a page eligible; search engines decide what to display.
-- **Organization markup on every page with different details.** Inconsistent names, logos or profiles weaken entity understanding. Define it once and reference it.
+- **Organization markup on every page with different details.** Inconsistent names, logos or profiles weaken entity understanding. Keep one canonical set of values and one `@id`, then repeat the properties each page needs instead of relying on a bare reference.
 - **Hand-coded markup that goes stale.** Dates and authors change; templated markup keeps up.
 - **Choosing types for display rather than accuracy.** Wrong types (recipes for instructions, events for broadcasts) are treated as misleading.
 - **Never validating after changes.** A template update can silently break markup across hundreds of pages.

@@ -44,9 +44,9 @@ Ask for these before drafting:
 3. **Write the opening line last, but give it the most time.** The first one or two lines decide whether anyone clicks "see more". Strong openings are specific and create a gap: a concrete number, a surprising admission, a clear claim, a moment in a story. Write five options and pick the one that is both intriguing and true.
 4. **Write the body for skimming.** Short paragraphs, one idea each, plenty of line breaks. Use concrete details over general statements. Keep jargon out unless the audience uses it daily.
 5. **Close naturally.** End with the takeaway, a genuine question, or an invitation that fits the goal. Avoid generic engagement bait ("Agree?", "Thoughts?") unless it truly fits; a specific question gets better comments.
-6. **Handle links deliberately.** Many authors find posts with outbound links reach fewer people. If a link is needed, consider mentioning it in the post and adding it in a comment, and say this is a common practice rather than a rule.
+6. **Handle links deliberately.** LinkedIn has not published a rule that links reduce reach; the belief comes from third-party observation, and the evidence is mixed. Moving a link into the first comment has a real cost: fewer clicks and weaker attribution. Default to putting the link in the post when the click is the goal. If the author suspects a reach penalty, test it on their own account by alternating comparable posts with the link in the body or in a comment, then compare impressions and clicks across several posts before adopting either habit.
 7. **Match the voice.** Compare the draft to voice samples: sentence length, humor, formality, use of first person. Remove anything the author would never say.
-8. **Check length.** Most effective B2B posts land somewhere between 80 and 250 words. Go longer only when the story earns it.
+8. **Check length.** There is no universal ideal word count. Let the idea and format set the length (a sharp observation may need a few lines, a story or framework more), cut anything that does not serve the one point, and use the author's own reach, read-through, replies and conversions by post length to set a benchmark over time.
 
 ## Output format
 

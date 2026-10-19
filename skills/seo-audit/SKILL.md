@@ -40,7 +40,7 @@ Ask for what is available; unavailable items become checks the user runs.
 3. **Indexation.** Compare pages you want indexed with pages actually indexed. Look for stray noindex tags, conflicting canonical tags, duplicate URLs from parameters or trailing slashes, thin tag and archive pages, and staging sites exposed to search.
 4. **Site structure and internal linking.** Important pages should be reachable within about three clicks from the homepage and receive internal links from related content with descriptive anchor text. Check that topic hubs link to their supporting pages and back.
 5. **On-page relevance.** For each priority page: does the title tag target the main query and describe the page, is there one clear H1, does the content answer the query's intent (informational, comparison, transactional), and is the meta description written to earn the click? Look for keyword cannibalization: several pages competing for the same query.
-6. **Content quality.** Assess whether priority content is original, specific, current and written by someone with evident expertise. Thin, outdated or duplicate pages can weigh down a whole section. Decide for each weak page: improve, merge, redirect or remove.
+6. **Content quality.** Assess whether priority content is original, specific, current and written by someone with evident expertise. Thin, outdated or duplicate pages can weigh down a whole section. Decide for each weak page: improve, merge, redirect or remove. Redirect only to a page that genuinely replaces it; a removed page with no true equivalent should return 404 or 410, come out of internal links and the sitemap, and have anything valuable merged elsewhere first. Redirecting everything to the homepage or a loosely related page tends to be treated as a soft 404.
 7. **Performance and experience.** Check core web vitals in the field data available, mobile usability, intrusive interstitials and HTTPS. Prioritize templates (all blog posts, all product pages) over individual pages.
 8. **Structured data.** Verify markup is valid, matches visible content and uses types relevant to the page. Note that eligibility for some rich results has narrowed over time.
 9. **Authority.** Compare referring domains and the quality of links to priority pages against competitors. Identify linkable assets you already have and pages that deserve more internal links.
@@ -88,7 +88,7 @@ Checks the user still needs to run: ...
 - **A 200-item list with no priorities.** Teams cannot act on everything. Rank by business impact.
 - **Chasing tool scores.** Automated health scores flag many issues that do not affect rankings. Judge each one on consequence.
 - **Ignoring intent.** A product page will struggle to rank for an informational query, and a blog post for a transactional one. Match page type to intent.
-- **Deleting content without redirects.** Removing pages that have links or traffic without redirecting them throws away value.
+- **Removing pages without a plan.** Deleting pages that have links or traffic without redirecting them to a genuine equivalent throws away value, but redirecting to an unrelated page is no better: with no true replacement, return 404 or 410, clean up internal links and the sitemap, and merge any valuable content first.
 - **Migrations without a redirect map.** Most severe traffic losses follow redesigns and domain moves done without a full URL mapping and post-launch checks.
 - **Treating SEO as separate from AI search.** The same crawlable, helpful, well-structured content underpins both.
 

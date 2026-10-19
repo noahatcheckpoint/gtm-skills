@@ -40,9 +40,9 @@ Ask for these first:
 2. **Set marketing's commitments.** Volume of qualified leads per month (derived from the pipeline target working backwards through historical conversion rates), minimum data on each lead (name, company, role, source, the action that triggered it), and the quality bar (share that sales should accept).
 3. **Tier response times by intent.** Hand-raisers (demo, pricing, contact sales) deserve the fastest response, measured in minutes to a few hours during business hours. Scored leads can tolerate a business day. Low-intent leads may go to nurture without rep contact. Speed matters most for the highest intent leads; a single target for all leads either wastes rep time or loses hot ones.
 4. **Define follow-up effort.** The number of attempts across channels and the period they span before a lead can be closed out (for example, several touches across email, phone, and social over two to three weeks). Define what counts as an attempt: a logged call or a sent personal email, not a status change.
-5. **Write acceptance and rejection rules.** Sales must accept or reject within a set window (often one to two business days). Rejection requires a reason from a fixed list (wrong fit, wrong person, no contact data, duplicate, existing customer, not interested now). This list is marketing's most useful quality feedback.
+5. **Write disposition rules.** Sales gives every lead a disposition within a set window (often one to two business days). Separate two kinds. Operational dispositions (routed to the wrong owner, duplicate record, enrichment failed, ownership in dispute) are defects with a named fixer: RevOps for routing and data, the team leads for disputes. They pause the clock, not the lead. Fit dispositions (accepted, or rejected as wrong fit, wrong person, existing customer, not interested now) judge the lead itself and come from a fixed list. The original lead stays in reporting either way, and the fit list is marketing's most useful quality feedback.
 6. **Define recycling.** Where rejected or unresponsive leads go (nurture, re-score), how long before they can return, and what re-qualifies them. Leads should never just disappear.
-7. **Add accountability for both sides.** If marketing delivers below the agreed quality, sales follow-up obligations for those leads relax. If sales misses response times, those leads do not count against marketing's conversion targets. Symmetry keeps the agreement fair.
+7. **Add accountability for both sides.** Neither side's miss changes the other side's obligations or the funnel math: every lead that met the agreed definition stays in the conversion denominator and is still worked to the effort standard. Report quality shortfalls (acceptance rate below target, rejection reasons) and SLA breaches (late first touch, incomplete attempts) as separate metrics, each with a remediation owner and an escalation step. Relaxing obligations or excluding leads lets each team improve its numbers by abandoning valid leads.
 8. **Build the scorecard.** Weekly or monthly: leads delivered versus target, acceptance rate, median time to first touch by tier, share meeting effort standard, rejection reasons breakdown, conversion to opportunity, and pipeline created.
 9. **Set governance.** A recurring joint review (monthly works for most teams), an escalation path when the SLA is breached repeatedly, and a quarterly renegotiation of targets.
 
@@ -64,14 +64,16 @@ MQL: [criteria]   SAL: [criteria]   SQL: [criteria]
 | Lead tier | Examples | First touch within | Attempts | Over period |
 |---|---|---|---|---|
 
-## Acceptance and rejection
-Accept or reject within [x] business days. Rejection reasons: [list]
+## Dispositions
+Disposition within [x] business days.
+Operational (defect, owner): [routing / duplicate / enrichment / ownership dispute]
+Fit: accepted, or rejected for [list]
 
 ## Recycling
 | Outcome | Goes to | Can return when |
 
 ## Mutual accountability
-[rules for each side when the other misses]
+[quality and breach metrics reported separately, remediation owner, escalation; denominators never change]
 
 ## Scorecard
 | Metric | Target | Owner | Source report |
@@ -86,7 +88,8 @@ Accept or reject within [x] business days. Rejection reasons: [list]
 - Definitions are written, not referenced as "the usual."
 - Response times are tiered by lead intent.
 - "Attempt" and "worked" are defined by real activity.
-- Rejection needs a reason from a fixed list within a deadline.
+- Operational defects are separated from fit rejections, each defect type has a fixer, and rejected leads stay in reporting.
+- Breaches by one side never relax the other side's obligations or remove leads from conversion denominators.
 - Recycling rules ensure no lead disappears.
 - Every scorecard metric has an owner and a data source.
 - There is a review cadence and an escalation path.

@@ -41,8 +41,8 @@ Ask for these. Where the user has no figure, propose a range and mark it as an a
 4. **Set contract value per segment.** Use actual ACV from current customers where possible. For segments with no customers yet, estimate from pricing logic (seats times price, expected usage) and mark it as an assumption.
 5. **Calculate TAM.** Accounts times ACV, summed across segments. This is the annual revenue if every account that fits the definition bought at your price.
 6. **Narrow to SAM.** Remove what you cannot serve today: unsupported regions or languages, missing integrations, compliance gaps, segments the product does not fit. State each filter and how many accounts it removes.
-7. **Model SOM from capacity, not a percentage.** Work forward from the motion: reps times opportunities per rep per year times win rate times ACV, plus any expected inbound and partner contribution. Compare to SAM. If SOM is above roughly 10 to 15 percent of SAM within three years for a young company, challenge the inputs.
-8. **Cross-check top-down.** Take a published industry spend or market figure and apply your share of wallet. If top-down and bottom-up differ by more than about 3x, explain why or revisit the assumptions. Bottom-up wins ties because it is tied to accounts you can name.
+7. **Model SOM from capacity, not a percentage.** First name the measure: new bookings per year, or ARR at the end of year three (usually the more useful one). Then build it year by year: ramped rep capacity (hires times months productive, with new reps at partial output while they ramp), opportunities per ramped rep, win rate, and sales-cycle lag (deals created late in a year close the next one). Add inbound and partner deals only where they are not already counted in rep opportunities, then carry the customer base forward with churn and expansion. Compare the year-three figure to SAM. There is no universal ceiling on penetration: check the implied share against your own win history, the number of competitors, and how mature the category is, and challenge any input that drives an unusually high share.
+8. **Cross-check top-down.** Take a published industry spend figure and filter it down to your category, segments, regions and use case so it describes the same TAM or SAM. Do not apply your expected market share here; achievable share belongs only in the SOM model. If top-down and bottom-up differ by more than about 3x, explain why or revisit the assumptions. Bottom-up wins ties because it is tied to accounts you can name.
 9. **Run sensitivity.** Show what happens to SAM and SOM if ACV, win rate or account count moves 25 percent either way. Point out which assumption the answer is most sensitive to.
 
 ## Output format
@@ -62,10 +62,9 @@ SAM filters
 | Filter | Accounts removed | Reason |
 SAM: [accounts] x [ACV by segment] = [value]
 
-SOM (3-year, capacity-based)
-- Reps: ...  Opportunities per rep per year: ...  Win rate: ...
-- Inbound / partner contribution: ...
-- SOM: [value]  ([x]% of SAM)
+SOM (capacity-based; measure: [ARR at end of year 3 / annual bookings])
+| Year | Ramped reps | Opps per ramped rep | Win rate | Cycle lag | Incremental inbound / partner | Churn / expansion | Value |
+- SOM: [value]  ([x]% of SAM, compared with [win history / competitor count])
 
 Top-down cross-check: [method, figure, gap vs bottom-up, explanation]
 
@@ -81,7 +80,8 @@ Assumptions to verify: ...
 - Every account count names its source and date.
 - ACV is segmented, and each value is labeled actual or assumed.
 - SAM filters are listed individually with their effect.
-- SOM is derived from sales capacity and conversion rates, not a flat share.
+- SOM names its measure and is built year by year from ramped capacity, conversion, cycle timing and churn, not a flat share.
+- The top-down check filters spend to the same scope and contains no market-share assumption.
 - A top-down figure is used only as a check, with the gap explained.
 - The sensitivity table identifies the assumption that matters most.
 

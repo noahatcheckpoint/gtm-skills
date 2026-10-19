@@ -53,8 +53,8 @@ If the user has none of this, offer a default B2B model and mark every assumptio
 3. **Write entry triggers as events, not opinions.** "Requested a demo," "fit score at least B and 3 engagement actions in 30 days," "rep logged a connected call with pain confirmed." Avoid "seems interested."
 4. **Assign one owning team per stage** and the action expected within a time window. This becomes the backbone of the sales and marketing SLA.
 5. **Define every exit.** Forward, recycle to nurture (with a reason code), or disqualify (with a reason code). Decide who may move a record backwards and when. A model that only moves forward inflates every stage over time.
-6. **Decide account versus contact roll-up.** Common rule: account stage equals the most advanced contact stage, except Customer, which is set at account level only when a deal closes.
-7. **Add timestamps.** Every stage needs a "date entered" field, never overwritten. Without it, velocity and cohort conversion are impossible.
+6. **Define account stages from account-level evidence.** Do not copy the most advanced contact stage upward: one enthusiastic contact would advance the whole buying account and inflate account conversion. Set account stages from evidence about the account: engagement from several members of the buying group, a qualified use case confirmed by sales, an opportunity created, a deal closed won. Keep contact stages as their own field so both views remain reportable.
+7. **Keep transition history.** Records move backward and re-enter stages, so one date per stage is not enough. Best: an immutable log row for every stage change (record, from stage, to stage, timestamp, who or what changed it). Minimum: first-entered, most-recent-entered and exited dates for every stage. First-entered dates feed cohort conversion; most-recent dates feed current-cycle velocity. Without this, velocity and cohort conversion are impossible.
 8. **Set guardrails.** No skipping from Lead straight to Customer without a deal; Customer cannot be set manually; disqualification requires a reason.
 9. **Define the metrics the model enables:** stage to stage conversion by cohort month, median days in stage, recycle rate, and disqualification reasons.
 10. **Plan the migration.** Map every old value to a new one, decide how to backfill dates, and pick a cutover date after which reports use only the new model.
@@ -76,8 +76,8 @@ Motion: [sales-led / product-led / hybrid]   Unit: [contact / account / both]
 ## Recycle and disqualification reasons
 | Code | Meaning | Returns to | Re-entry rule |
 
-## Roll-up rules (contact to account)
-[rules]
+## Account stage rules (account-level evidence)
+[evidence required per account stage; contact stages kept separately]
 
 ## Guardrails
 [bullets]
@@ -100,7 +100,8 @@ Motion: [sales-led / product-led / hybrid]   Unit: [contact / account / both]
 - Entry triggers are observable events or thresholds anyone could audit.
 - Lifecycle, lead status, and deal stage are three separate fields.
 - Every stage has a backward or exit path with reason codes.
-- "Date entered" timestamps exist for every stage and are never overwritten.
+- Every stage change is logged immutably, or each stage has first-entered, most-recent-entered and exited dates.
+- Account stages rest on account-level evidence, not on the single most advanced contact.
 - Customer is set by a closed won deal, not by hand.
 - Stage count is the minimum that still separates distinct owners and actions.
 - Assumptions are labelled, not hidden.

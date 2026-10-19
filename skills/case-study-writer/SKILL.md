@@ -48,7 +48,7 @@ Ask for these first. If no interview has happened, start with the interview guid
 4. **Choose the structure.** A dependable outline: headline with the outcome, summary box (customer, challenge, solution, results), the situation, the decision, the implementation, the results, a closing quote, and what is next for the customer.
 5. **Write in the customer's voice where possible.** Use direct quotes for the emotional and evaluative parts. Keep vendor descriptions short and focused on what the customer used, not a feature tour.
 6. **Handle objections inside the story.** If the target reader worries about implementation effort or switching risk, show how this customer handled it.
-7. **Anonymize properly when required.** Replace names with descriptive labels, remove identifying details (exact location, unique product names, specific dates), and check that a knowledgeable reader could not identify the customer from the combination of details.
+7. **De-identify properly when required.** Replace names with descriptive labels, generalize or remove distinctive details (exact location, unique product names, specific dates, unusual figures), and assess how easily a knowledgeable reader such as a competitor or industry insider could still recognize the customer from the combination. De-identification lowers that risk but cannot guarantee it, so the customer approves the final anonymized version explicitly, just as they would a named one.
 8. **Create derivative formats.** One-paragraph summary, a three-line proof snippet for emails, a slide (challenge, solution, results, quote), and two social post angles.
 9. **Prepare for approval.** List the quotes and numbers the customer must approve, and flag anything sensitive.
 
@@ -92,7 +92,7 @@ For customer approval: [list of quotes and figures]
 - Every metric has a baseline, result and time frame, or is labeled as an estimate.
 - At least two direct quotes, attributed appropriately for the permission level.
 - The "why now" and alternatives considered are included.
-- Anonymized stories cannot be traced to the customer.
+- Anonymized stories have had distinctive details generalized, their re-identification risk is assessed, and the customer has approved the final text.
 - Short formats are consistent with the full story.
 - Approval items are listed.
 

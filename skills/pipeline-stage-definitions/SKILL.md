@@ -40,7 +40,7 @@ Ask for these before drafting:
 2. **Keep the stage count small.** Five to seven open stages suits most B2B motions. More stages create false precision; fewer hide where deals stall.
 3. **Write exit criteria as buyer actions.** Weak: "demo delivered," "proposal sent." Strong: "buyer confirmed the problem and its cost in their own words," "economic buyer agreed to evaluate a proposal," "buyer shared their procurement steps and dates." A seller can always send a proposal; only a buyer can react to it.
 4. **Attach evidence to each exit.** What would a manager look at to verify it? A recap email the buyer replied to, a scheduled meeting with the economic buyer, a mutual action plan, a security questionnaire received.
-5. **Define required fields per stage.** Early: pain, source, primary contact. Mid: decision criteria, economic buyer, competitor, amount estimate. Late: paper process, signer, legal contact, close date with reason. Make the CRM block advancement when they are empty, if your system supports it.
+5. **Define required fields per stage.** Early: pain, source, primary contact. Mid: decision criteria, economic buyer, competitor, amount estimate. Late: paper process, signer, legal contact, close date with reason. Prefer warnings over hard blocks: a blocked stage change invites invented values, can break imports and integrations, and confuses complete fields with real buyer progress. Show a warning when evidence fields are empty, allow advancement with a logged exception, have managers review exceptions in pipeline meetings, and track completeness in a hygiene report. Reserve hard validation for the few fields that are truly mandatory and machine-checkable, such as amount, close date and currency at proposal stage.
 6. **Set stall thresholds.** Use roughly 1.5 to 2 times the median days in stage as a review trigger. A stalled deal is not automatically dead, but it must be re-justified or moved back.
 7. **Allow backward movement.** If the champion leaves or the budget is frozen, the deal moves back. A pipeline that only moves forward ends up overstating late-stage value.
 8. **Define closed lost properly.** Required loss reason (from a fixed list), competitor if any, and the stage it was lost from. Add a "no decision" reason; it is often the biggest competitor.
@@ -83,7 +83,7 @@ Stage conversion, median days per stage, stage skips, backward moves, slip rate.
 
 - Every exit criterion is something the buyer did, not the seller.
 - Each stage names the evidence a manager can inspect.
-- Required fields are listed per stage and get stricter later in the pipeline.
+- Required fields are listed per stage and get stricter later in the pipeline; hard validation is limited to machine-checkable fields, with warnings and an exception path for the rest.
 - Stall thresholds are set and tied to a review action.
 - Backward movement is allowed and described.
 - Closed lost includes "no decision" and a required reason.
@@ -104,6 +104,6 @@ Stage conversion, median days per stage, stage skips, backward moves, slip rate.
 
 - "Rewrite our pipeline stages so each one is defined by a buyer action. Here are our current six stages."
 - "Design a pipeline for an enterprise motion with security review and procurement."
-- "What required fields should block a deal from moving to Negotiation?"
+- "Which fields should be required before a deal moves to Negotiation, and which should only warn?"
 - "Our late-stage pipeline keeps slipping. Help me set stall rules and exit evidence."
 - "Create a separate pipeline for expansion deals with existing customers."

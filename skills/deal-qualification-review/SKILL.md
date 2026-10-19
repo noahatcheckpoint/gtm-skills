@@ -37,10 +37,10 @@ Ask for these before scoring:
 
 1. **Choose the framework and explain why.** MEDDICC elements:
    - Metrics: the quantified business impact the buyer expects.
-   - Economic buyer: the person who can approve the spend without further sign-off.
+   - Economic buyer: the person with final economic ownership of the decision and the authority to commit the budget. In larger organizations procurement approval and contract signature often sit with other people; map those separately under paper process instead of expecting one person to hold all three.
    - Decision criteria: what the buyer will judge vendors on, formally and informally.
    - Decision process: the steps, people, and dates from evaluation to selection.
-   - Paper process: legal, procurement, security, and signature steps after selection.
+   - Paper process: legal, procurement, security, and signature steps after selection, with who approves each one.
    - Identify pain: the business problem, its cause, and who feels it.
    - Champion: an insider with influence who is actively selling for you when you are not there.
    - Competition: alternatives including other vendors, internal builds, and inaction.

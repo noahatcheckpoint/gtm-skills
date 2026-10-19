@@ -39,20 +39,20 @@ Ask for these. The audit can run on summary counts if raw exports are not sharea
 2. **Measure six dimensions for each critical field or object:**
    - Completeness: share of records where the field is filled.
    - Validity: values in an allowed format or picklist (valid email syntax, ISO country, real phone format).
-   - Uniqueness: duplicate rate for contacts (same email) and accounts (same domain or close name match).
+   - Uniqueness: duplicate candidates, then confirmed duplicates. A shared email or domain only nominates a pair: shared inboxes (info@, sales@), reused addresses, subsidiaries and multi-brand domains collide legitimately. Confirm with composite keys (email plus name, domain plus legal entity and country) and report candidate and confirmed rates separately.
    - Consistency: the same fact recorded the same way ("US," "USA," "United States").
    - Freshness: share of records updated or verified in the last 12 months; bounce rate on recent sends as a proxy.
    - Ownership: records with no owner, or owned by inactive users.
 3. **Use heuristics to grade each area** (adjust to your context):
-   - Green: critical field completeness above 90%, duplicates under 2%, fewer than 5% unowned.
+   - Green: critical field completeness above 90%, confirmed duplicates under 2%, fewer than 5% unowned.
    - Amber: completeness 70 to 90%, duplicates 2 to 5%.
    - Red: completeness below 70%, duplicates above 5%, or any critical process failing because of data.
-   Note that B2B contact data typically decays by roughly a quarter or more per year as people change jobs, so freshness problems are normal, not a sign of negligence.
+   Freshness erodes continuously as people change jobs and companies restructure, so some staleness is normal, not negligence. Published annual decay figures vary widely by market, role and how decay is defined, so measure your own rate (hard bounces, job-change flags, failures when re-verifying a random sample) instead of borrowing a benchmark.
 4. **Find the sources of bad data.** For each problem, trace where it enters: a form with a free-text country field, an integration that creates contacts without checking for duplicates, an import with no mapping rules. Fixing the source matters more than fixing the records.
 5. **Size the impact.** Translate problems into consequences: leads unrouted per month, emails bouncing, accounts double-worked, revenue reported under the wrong segment. Leaders fund impact, not completeness percentages.
 6. **Prioritise with an impact versus effort grid.** Quick wins first (picklists replacing free text, a duplicate rule on creation), then structured cleanups (merges, enrichment of key fields), then governance.
-7. **Define merge rules before merging.** Which record survives (oldest, most active, owned by a current rep), which field values win, and what must never be overwritten (owner of an open deal, lifecycle dates). Test merges on a sample first.
-8. **Plan prevention:** required fields at creation, validation rules, picklists, duplicate checks on every entry point, an archive policy for records with no activity in 24 months or more, and owner reassignment when users leave.
+7. **Define merge rules before merging.** Which record survives (oldest, most active, owned by a current rep), which field values win, and what must never be overwritten (owner of an open deal, lifecycle dates). Treat automated matches as candidates: merge automatically only above a high-confidence threshold on composite identifiers, send the rest to human review, respect account hierarchy (a subsidiary is not a duplicate of its parent), and exclude records with open deals, active contracts or consent history from automatic merging. Test merges on a sample first.
+8. **Plan prevention:** required fields at creation, validation rules, picklists, duplicate checks on every entry point, owner reassignment when users leave, and a retention policy set per object and lifecycle status. Inactivity alone never justifies archiving: exclude active customers, long-cycle accounts, and records you must keep for contracts, consent evidence or legal retention, check which reports and attribution depend on a record, and keep its audit history when it is archived.
 9. **Set ongoing monitoring:** a monthly data quality dashboard with the same metrics, so the score is tracked rather than re-audited from scratch.
 
 ## Output format
@@ -83,7 +83,7 @@ Overall grade [ ]. Top three problems and their business impact.
 [survivor logic, field precedence, protected fields]
 
 ## Prevention controls
-[validation, required fields, duplicate checks, archive policy]
+[validation, required fields, duplicate checks, retention policy with exclusions]
 
 ## Monitoring
 Metrics, cadence, threshold that triggers action.
@@ -95,7 +95,9 @@ Metrics, cadence, threshold that triggers action.
 - All six dimensions are measured or explicitly marked as not measurable.
 - Each problem has a root cause at an entry point, not just a symptom.
 - Impact is expressed in business terms.
+- Duplicate figures separate candidates from confirmed duplicates; ambiguous matches go to human review.
 - Merge rules exist before any merge action is recommended.
+- Archiving rules differ by object and status and list their exclusions.
 - The plan includes prevention, not only cleanup.
 - Monitoring metrics match the audit metrics.
 

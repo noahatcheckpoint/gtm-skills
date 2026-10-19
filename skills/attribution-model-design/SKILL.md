@@ -36,7 +36,7 @@ Ask for these before designing:
 
 ## Process
 
-1. **Write the questions first.** For example: "Which channels open new accounts?" (first touch helps), "What converts engaged accounts into opportunities?" (opportunity creation touches help), "If we cut this channel, would pipeline fall?" (only incrementality testing answers this). Each question may need a different view.
+1. **Write the questions first.** For example: "Which channels open new accounts?" (first touch helps), "What converts engaged accounts into opportunities?" (opportunity creation touches help), "If we cut this channel, would pipeline fall?" (a causal question: answer it with an incrementality test or a careful quasi-experiment, never with the model). Each question may need a different view.
 2. **Define the conversion events.** Usually: first touch, lead created, opportunity created, closed won. Agree that pipeline and revenue are attributed at opportunity level, using contacts linked to the opportunity, not just the person who filled in a form.
 3. **Set data rules.** Standard naming for source, medium, and campaign; a fixed channel taxonomy (paid search, paid social, organic search, direct, referral, email, events, partner, outbound, other); tracking parameters on every link you control; and rules for offline touches (events, sales meetings) to be logged as touchpoints. Without consistent capture, any model just redistributes bad data.
 4. **Choose the model or models.**
@@ -46,8 +46,8 @@ Ask for these before designing:
    - W-shaped: gives the largest shares to three milestones (the opening touch, the touch that created the lead, the touch that created the opportunity) and spreads the rest; needs reliable stage dates.
    - Data-driven: learns weights from your history; needs high volume and clean data, and still shows correlation, not cause.
    For most mid-market B2B teams, a position-based or W-shaped model as the main view, with first touch shown alongside, is a sensible start. Show more than one view so nobody mistakes one model for the truth.
-5. **Add self-reported attribution.** A required, open-text "How did you hear about us?" field on demo and signup forms captures podcasts, communities, peer recommendations, and other channels software tracking misses. Categorise answers monthly and compare with the software view.
-6. **Add incrementality tests for big budget questions.** Holdout groups, geographic splits, or pausing a channel for a defined period answer whether spend causes pipeline. Attribution models cannot.
+5. **Add self-reported attribution.** A "How did you hear about us?" field on demo and signup forms captures podcasts, communities, peer recommendations, and other channels software tracking misses. Use a short list of channels plus an "Other" free-text option so answers can be counted. Decide required versus optional by testing: compare form completion rate and answer quality between the two before making it mandatory. Categorise answers monthly and compare with the software view.
+6. **Add incrementality tests for big budget questions.** Randomized holdouts or geographic experiments are the preferred way to learn whether spend causes pipeline. When randomizing is not feasible, use a quasi-experimental design with its assumptions stated: matched markets, interrupted time series around a channel pause, difference-in-differences against a comparable region or segment, or a synthetic control. Attribution models cannot answer this.
 7. **Define account versus contact logic.** In buying committee sales, roll touches up to the account and opportunity; decide the lookback window (often 90 to 180 days before opportunity creation, matched to your cycle).
 8. **Specify reports.** Pipeline and revenue by channel under each model, self-reported source breakdown, cost per opportunity by channel, and trend over time. State the limits on the report itself.
 9. **Plan governance.** An owner, a data quality check each month (share of opportunities with no touchpoints, share in "other"), and a review when the model or taxonomy changes.
@@ -93,7 +93,8 @@ Field, placement, categorisation process, review cadence.
 - A channel taxonomy and naming convention are defined.
 - The model choice is justified and at least two views are shown.
 - Self-reported attribution is included.
-- Causal questions are routed to incrementality tests, not to the model.
+- Causal questions are routed to experiments or stated-assumption quasi-experiments, not to the model.
+- The self-reported field uses a controlled list plus "Other", and required versus optional is decided by a completion test.
 - Data quality metrics and an owner are named.
 
 ## Common mistakes
