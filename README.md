@@ -6,6 +6,8 @@ Each skill is a single `SKILL.md` file that teaches an AI assistant how to do on
 
 Browse, search and copy every skill at **[checkpointgtm.com/skills](https://checkpointgtm.com/skills/)**.
 
+**We're hiring.** The team behind these skills is looking for GTM engineers, RevOps consultants and working students. Berlin preferred, and everyone has the option of a 4-day work week for 5-day pay. [See open roles](https://checkpointgtm.com/careers.html), or go straight to the [GTM Engineer role](https://checkpointgtm.com/careers/gtm-engineer.html).
+
 ## Install
 
 **With the skills CLI** (Claude Code, Cursor, Copilot and other agents that support Agent Skills):
@@ -110,4 +112,4 @@ Skills follow the open [Agent Skills](https://agentskills.io) format: YAML front
 
 MIT. Use, adapt and share them.
 
-Maintained by [Checkpoint GTM](https://checkpointgtm.com/), a RevOps and GTM consultancy. Want these run for you? [Talk to us](https://checkpointgtm.com/contact.html).
+Maintained by [Checkpoint GTM](https://checkpointgtm.com/), a RevOps and GTM consultancy. Want these run for you? [Talk to us](https://checkpointgtm.com/contact.html). Want to build them with us? [We're hiring](https://checkpointgtm.com/careers.html).
