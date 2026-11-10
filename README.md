@@ -1,6 +1,6 @@
 # GTM & RevOps Skills
 
-40 free, tool-agnostic skills for go-to-market and revenue operations work: ICP and positioning, outbound, copy, SEO and AI search, RevOps and CRM design, sales execution, analytics and retention.
+Free, tool-agnostic skills for go-to-market and revenue operations work: ICP and positioning, outbound, copy, SEO and AI search, RevOps and CRM design, sales execution, analytics and retention.
 
 Each skill is a single `SKILL.md` file that teaches an AI assistant how to do one job well: what to ask for, the steps to follow, the output format and a quality checklist. No software, integrations or API keys are required. They work in Claude, ChatGPT, Gemini, Copilot, Cursor or any assistant that accepts instructions.
 
@@ -23,6 +23,8 @@ npx skills add noahatcheckpoint/gtm-skills --skill icp-definition
 **Any other assistant:** open a skill's `SKILL.md`, copy it and paste it into a project's instructions, a custom GPT, a Gem or the start of a chat.
 
 ## Skills
+
+The tables below list the core library. New skills are added to [`skills/`](skills/) regularly; the full, current catalog is always at [checkpointgtm.com/skills](https://checkpointgtm.com/skills/).
 
 ### GTM Strategy & ICP
 
